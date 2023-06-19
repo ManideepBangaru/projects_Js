@@ -5,19 +5,19 @@ navToggle.addEventListener('click', function () {
     // console.log(links.classList);
     // console.log(links.classList.contains('links'));
 
-    // if(links.classList.contains('show-links')){
-    //     links.classList.remove('show-links')
-    // }
-    // else{
-    //     links.classList.add("show-links")
-    // }
+    if(links.classList.contains('show-links')){
+        links.classList.remove('show-links')
+    }
+    else{
+        links.classList.add("show-links")
+    }
 
-    // one liner
-    links.classList.toggle("show-links");
+    // // one liner
+    // links.classList.toggle("show-links");
 })
 
-// window.addEventListener('mouseup', function(e){
-//     if(e.target != links){
-//         links.classList.remove("show-links")
-//     }
-// })
+window.addEventListener('mouseup', function(e){
+    if(e.target.classList != links){
+        links.classList.remove("show-links")
+    }
+})
